@@ -35,3 +35,10 @@ From https://github.com/mkvm205/git-cmds
  created new local branch task1 // updated the files there 
 then committ -m in new task branch and then switch to master and then swithc to master branch  
 do git merge task // execute from master branch 
+
+**********************
+
+TO delete a branch in git 
+
+git branch -d <branch name> 
+git branch -D <branch name > // will force a delete brnach even if it cotain uncommited files
