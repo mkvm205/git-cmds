@@ -13,9 +13,6 @@ git contains three area
 
 Git Pull ---New update
 
-
-
-
 When changes made to master by other user to get all thos in our local 
 
  Git Pull = git fetch + git merge 
