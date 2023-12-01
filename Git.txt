@@ -45,3 +45,39 @@ git branch -D <branch name > // will force a delete brnach even if it cotain unc
 
 **********************
 pushing localy created new branch to remote
+
+git contains three area 
+
+1 - Working area (location prior to  git add when files are created)
+2 - Index/staging area (git add .sh)
+3 - Local Repository : (when commited it bring it back to local repostiroy
+)
+4- git push (picks all the commits from local repos and pushes to remote repps)
+ eg : git push origin (master/main )
+
+ origin = remote repos and master = represents the branch to which we want to push all our changes
+
+ ******************
+
+Git Pull ---New update
+
+When changes made to master by other user to get all thos in our local 
+
+ Git Pull = git fetch + git merge 
+https://github.com/mkvm205/git-cmds.git
+
+git remote add murali https://github.com/mkvm205/git-cmds.git
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git remote -v 
+murali  https://github.com/mkvm205/git-cmds.git (fetch)
+murali  https://github.com/mkvm205/git-cmds.git (push)
+origin  https://github.com/mkvm205/git-cmds.git (fetch)
+origin  https://github.com/mkvm205/git-cmds.git (push)
+
+ git fetch // provides the newly created branches to the local 
+ $ git fetch 
+From https://github.com/mkvm205/git-cmds
+ * [new branch]      feature    -> origin/feature
+
+*********************
