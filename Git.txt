@@ -1,3 +1,6 @@
+30 November 2023
+21:41
+
 git contains three area 
 
 1 - Working area (location prior to  git add when files are created)
@@ -110,8 +113,143 @@ nothing added to commit but untracked files present (use "git add" to track)
 mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
 $
 
+Git reset has 3 option default is 
+
+1. mixed ( Removes the recent commit done part of that commit  changed files are keept them in part of working area 
+	2. Soft ( Removes the recent commit and keeps the files changed as part of that commit in staging area) 
+	3. Hard ( Removes the recent commit and removes all the files changed don’t keep in working or staging area)
+
+kvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git log --oneline
+40e80e0 (HEAD -> main) git reset command and Git reset Hard testing
+4a67095 git reset command and git log --oneline
+17e9e4f (origin/main) git rever the commit commnads
+ffc9a3a git conflict to use git merge tool
+590a696  check the new update in the main
+5dd93e1  ++ pushing localy created main  branch to remote
+6881b11 (origin/task1, task1)  pushing localy created task1 branch to remote
+4af9737 Updated Git delete command
+c7374c2 merge local task1 branch to local master branch the changes made
+a13f8ab Git updated status
+b8e2c47  update on git fetch command
+867cd2e Update Git.txt
+9569305 (origin/feature, feature) day 1 git - basic
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git reset --mixed HEAD~1^C
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git reset --mixed HEAD~1
+Unstaged changes after reset:
+M       a
+M       b
+
 ***************************
 
 git log --oneline
 
 ************************
+
+
+GIT SOFT Reset 
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git log --oneline
+1767996 (HEAD -> main) modified a and b
+4a67095 git reset command and git log --oneline
+17e9e4f (origin/main) git rever the commit commnads
+ffc9a3a git conflict to use git merge tool
+590a696  check the new update in the main
+5dd93e1  ++ pushing localy created main  branch to remote
+6881b11 (origin/task1, task1)  pushing localy created task1 branch to remote
+4af9737 Updated Git delete command
+c7374c2 merge local task1 branch to local master branch the changes made
+a13f8ab Git updated status
+b8e2c47  update on git fetch command
+867cd2e Update Git.txt
+9569305 (origin/feature, feature) day 1 git - basic
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git reset --soft HEAD~1
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   a
+        modified:   b
+
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$
+
+******************************
+GIT HARD reset 
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git log --oneline
+97481a0 (HEAD -> main) modified to CHeck Hard reset  a and b
+4a67095 git reset command and git log --oneline
+17e9e4f (origin/main) git rever the commit commnads
+ffc9a3a git conflict to use git merge tool
+590a696  check the new update in the main
+5dd93e1  ++ pushing localy created main  branch to remote
+6881b11 (origin/task1, task1)  pushing localy created task1 branch to remote
+4af9737 Updated Git delete command
+c7374c2 merge local task1 branch to local master branch the changes made
+a13f8ab Git updated status
+b8e2c47  update on git fetch command
+867cd2e Update Git.txt
+9569305 (origin/feature, feature) day 1 git - basic
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git status 
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git reset --hard HEAD~1
+HEAD is now at 4a67095 git reset command and git log --oneline
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git status 
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git log --oneline
+4a67095 (HEAD -> main) git reset command and git log --oneline
+17e9e4f (origin/main) git rever the commit commnads
+ffc9a3a git conflict to use git merge tool
+590a696  check the new update in the main
+5dd93e1  ++ pushing localy created main  branch to remote
+6881b11 (origin/task1, task1)  pushing localy created task1 branch to remote
+4af9737 Updated Git delete command
+c7374c2 merge local task1 branch to local master branch the changes made
+a13f8ab Git updated status
+b8e2c47  update on git fetch command
+867cd2e Update Git.txt
+9569305 (origin/feature, feature) day 1 git - basic
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$
+
+*************************************
