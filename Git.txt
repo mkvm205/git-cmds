@@ -88,3 +88,10 @@ not seeing the change
 TO resolve the confilct by opening and checking and updating the required
 if there are multaiple liens of the code we have to use diffmerge tool 
 **************
+TO remove the commit locally and remotely 
+git checkout 
+git reset 
+git revert
+
+
+***************************
