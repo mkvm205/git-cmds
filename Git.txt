@@ -42,3 +42,6 @@ TO delete a branch in git
 
 git branch -d <branch name> 
 git branch -D <branch name > // will force a delete brnach even if it cotain uncommited files
+
+**********************
+pushing localy created new branch to remote
