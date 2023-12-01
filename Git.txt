@@ -11,6 +11,26 @@ git contains three area
 
  ******************
 
- Git Pull ---New update
+Git Pull ---New update
 
- 
+
+
+
+When changes made to master by other user to get all thos in our local 
+
+ Git Pull = git fetch + git merge 
+https://github.com/mkvm205/git-cmds.git
+
+git remote add murali https://github.com/mkvm205/git-cmds.git
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git remote -v 
+murali  https://github.com/mkvm205/git-cmds.git (fetch)
+murali  https://github.com/mkvm205/git-cmds.git (push)
+origin  https://github.com/mkvm205/git-cmds.git (fetch)
+origin  https://github.com/mkvm205/git-cmds.git (push)
+
+ git fetch // provides the newly created branches to the local 
+ $ git fetch 
+From https://github.com/mkvm205/git-cmds
+ * [new branch]      feature    -> origin/feature
