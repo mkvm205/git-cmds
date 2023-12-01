@@ -31,3 +31,7 @@ origin  https://github.com/mkvm205/git-cmds.git (push)
  $ git fetch 
 From https://github.com/mkvm205/git-cmds
  * [new branch]      feature    -> origin/feature
+
+ created new local branch task1 // updated the files there 
+then committ -m in new task branch and then switch to master and then swithc to master branch  
+do git merge task // execute from master branch 
