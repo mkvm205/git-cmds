@@ -1,0 +1,16 @@
+git contains three area 
+
+1 - Working area (location prior to  git add when files are created)
+2 - Index/staging area (git add .sh)
+3 - Local Repository : (when commited it bring it back to local repostiroy
+)
+4- git push (picks all the commits from local repos and pushes to remote repps)
+ eg : git push origin (master/main )
+
+ origin = remote repos and master = represents the branch to which we want to push all our changes
+
+ ******************
+
+ Git Pull 
+
+ 
