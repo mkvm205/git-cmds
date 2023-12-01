@@ -11,6 +11,6 @@ git contains three area
 
  ******************
 
- Git Pull 
+ Git Pull ---New update
 
  
