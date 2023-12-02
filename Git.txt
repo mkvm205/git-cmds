@@ -253,3 +253,11 @@ mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
 $
 
 *************************************
+
+FOr Resolving COnflicts in Rmote Master Branch 
+
+1. We will have to pull the remote repos origin which is having conflict to local repos
+2. We will have to open those file which shows conflict  
+3. It will be marked with Headers and we have to review the code and adjust it according the requirment
+4. As know the part of the code which we do and other Devops team as done 
+5. Finally Remove the conflict markers
