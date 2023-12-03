@@ -315,6 +315,10 @@ git diff main feature
 
 **************************************
 
-GIT RESET 
+GIT RESET VS GIT revert
+
+GIT RESET : will reset to particualr commit id and prior commit id
+if we give three commit prior , it will remove all the changes  in file and git history 
+prior to 3 commits 
 
 
