@@ -261,3 +261,53 @@ FOr Resolving COnflicts in Rmote Master Branch
 3. It will be marked with Headers and we have to review the code and adjust it according the requirment
 4. As know the part of the code which we do and other Devops team as done 
 5. Finally Remove the conflict markers
+***************************
+
+GIT CHERRY PICK 
+
+to cherry pick and apply specfic commit from other local branches you can get the details of that 
+specfic commit from git log --oneline and apply as below 
+
+mkvm2@Murali2050 MINGW64 /c/MK-CODE/git-cmds/git-cmds (main)
+$ git cherry-pick 9a78a13
+[main 9cda39d] Cherry Picking two.sh
+ Date: Sat Dec 2 15:10:24 2023 -0600
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 two.sh
+
+******************************************
+
+GIT BLAME
+
+to verufy how many people modified the file and when the comits went on , 
+simlar to auditing the changes to file 
+
+if there multiple commit and we are intrest only in last 5 commits 
+
+-L : from the pecfied line onewards , here it mean Line1 
+
+
+#git blame <file name >
+
+to see line from 1 to 3 (_L 1,3)
+#git balame -L 1,3 welcome.txt 
+
+to see recent one week of changes in the file related to commit
+
+#git blame --since=1.week <filename> | grep -v "^\^"
+
+***********************
+
+GIT DIFF  ( Changes we made after last commit )
+
+
+
+
+
+
+
+
+
+
+
+
