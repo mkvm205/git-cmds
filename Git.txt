@@ -300,14 +300,21 @@ to see recent one week of changes in the file related to commit
 
 GIT DIFF  ( Changes we made after last commit )
 
+# git diff --color-words
 
+git diff --color-words Git.txt // shows the changes in working area
 
+$ git diff --color-words --staged Git.txt // shows the changes in staged area
 
+git diff <current comit number> <prior commit number>  <filename> --color-words 
 
+*******************************
+For comparing branches 
 
+git diff main feature
 
+**************************************
 
-
-
+GIT RESET 
 
 
